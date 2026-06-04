@@ -26,3 +26,23 @@
 .navbar-left ul li{
     cursor: pointer;
 }
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar-right .icon{
+    cursor: pointer;
+    width: 20px;
+}
+.navbar-right .profile{
+    width: 35px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.navbar-profile{
+    display: flex ;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
