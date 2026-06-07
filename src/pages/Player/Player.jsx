@@ -32,7 +32,7 @@ useEffect(()=>{
   return (
     <div className="player">
         <h1>Player Page</h1>
-        <img src={back_arrow_icon} alt="Back" onClick={() => navigate(-1)} />
+        <img src={back_arrow_icon} alt="Back" onClick={() => navigate(-2)} />
         <iframe width='90%' height='90%'
         src={`https://www.youtube.com/embed/${videoKey.key}`}
         title="trailr" frameBorder='0' allowFullScreen></iframe>
