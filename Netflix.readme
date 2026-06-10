@@ -1,0 +1,8 @@
+1) install: (npm create vite@latest,
+)
+2) downloads assests and save them in src>assests and neflix>public
+3) In src> crate folders (Components and Pages)
+4) Inside Components create folder Title (Title.jsx,Title.css) repeat process for  Navbar and Footer 
+5) Inside Pages create folder Home , Login , Player with JSx and CSs file Inside
+6) 
+

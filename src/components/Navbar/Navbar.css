@@ -48,7 +48,7 @@
 }
 .navbar .dropdown{
     position: absolute;
-    top: 100%;
+    top: 70%;
     right: 0;
     width: max-content;
     background-color: #191919;
@@ -67,4 +67,14 @@
 }
 .nav-dark{
     background-color: #191919;
+}
+.nav-routes{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.nav-routes:hover{
+    /* transform: scale(1.5); */
+    font-weight: 800;
+    /* color: red; */
 }

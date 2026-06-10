@@ -7,6 +7,11 @@ import profile_icon from "../../assets/profile_img.png";
 import caret_icon from "../../assets/caret_icon.svg";
 import { useRef } from "react";
 import { useEffect } from "react";
+import { logout } from "../../firebase";
+import { ToastContainer, toast } from 'react-toastify';
+// import TVShow from "./pages/Home/TV Show.jsx";
+import { Link } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -24,13 +29,14 @@ const Navbar = () => {
   return (
     <div ref={dropdownRef} className="navbar">
         <div className="navbar-left">
-          <img src={logo} alt="Netflix Logo" />
+          <Link to={`/`} >
+          <img src={logo} alt="Netflix Logo" /> </Link>
           <ul>
-            <li>TV Shows</li>
-            <li>Movies</li>
-            <li>My List</li>
-            <li>New & Popular</li>
-            <li>Browse By language</li>
+            <li><Link to={`/TVshow`} className="nav-routes"> TV Shows</Link></li>
+            <li><Link to={`/Movies`} className="nav-routes"> Movies</Link></li>
+            <li><Link to={`/Mylist`} className="nav-routes"> My List</Link></li>
+            <li><Link to={`/New&Popular`} className="nav-routes">New & Popular</Link></li>
+            <li><Link to={`/ByLanguage`} className="nav-routes"> Browse By language</Link></li>
           </ul>
         </div>
         <div className="navbar-right">
@@ -41,7 +47,7 @@ const Navbar = () => {
            <img src={profile_icon} alt="Profile" className="icons" />
            <img src={caret_icon} alt="" />
            <div className="dropdown">
-            <p>Sign out of Netflix</p>
+            <p onClick={()=>{logout()}}>Sign out of Netflix</p>
            </div>
           </div>
         </div>
